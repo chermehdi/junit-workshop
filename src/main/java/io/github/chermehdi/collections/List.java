@@ -34,4 +34,9 @@ public interface List<T> extends Iterable<T> {
    * append the list of the elements to the end of the list
    */
   void add(List<T> addAll);
+
+  /**
+   * @return true if the list is empty false otherwise
+   */
+  boolean isEmpty();
 }

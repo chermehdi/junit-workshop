@@ -1,8 +1,10 @@
 package io.github.chermehdi.collections;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import io.github.chermehdi.collections.exceptions.MqListIndexOutOfRangeException;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -20,6 +22,7 @@ class MqListTest {
   }
 
   @Test
+  @DisplayName("get should retrieve items")
   void get() {
     List<Integer> list = new MqList<>();
     list.add(10);

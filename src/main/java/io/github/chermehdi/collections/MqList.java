@@ -61,6 +61,11 @@ public class MqList<T> implements List<T> {
     }
   }
 
+  @Override
+  public boolean isEmpty() {
+    return ptr == 0;
+  }
+
   private void checkRange(int index) {
     if (index >= ptr) {
       throw new MqListIndexOutOfRangeException("index " + index + " is bigger than list capacity");
