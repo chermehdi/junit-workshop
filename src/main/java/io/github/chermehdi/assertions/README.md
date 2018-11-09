@@ -1,0 +1,133 @@
+# Assertions 
+
+- assertions are functions that you use to test your code 
+- the `JUnit 5` comes with a lot of provided assertion methods:
+
+- `assertSame(java.lang.Object,java.lang.Object)`
+- `assertSame(java.lang.Object,java.lang.Object,java.util.function.Supplier)`
+- `assertSame(java.lang.Object,java.lang.Object,java.lang.String)`
+- `assertTrue(boolean,java.util.function.Supplier)`
+- `assertTrue(java.util.function.BooleanSupplier)`
+- `assertTrue(java.util.function.BooleanSupplier,java.lang.String)`
+- `assertTrue(java.util.function.BooleanSupplier,java.util.function.Supplier)`
+- `assertTrue(boolean)`
+- `assertTrue(boolean,java.lang.String)`
+- `fail(java.lang.Throwable)`
+- `fail(java.lang.String)`
+- `fail()`
+- `fail(java.lang.String,java.lang.Throwable)`
+- `fail(java.util.function.Supplier)`
+- `assertFalse(java.util.function.BooleanSupplier,java.util.function.Supplier)`
+- `assertFalse(boolean)`
+- `assertFalse(boolean,java.lang.String)`
+- `assertFalse(boolean,java.util.function.Supplier)`
+- `assertFalse(java.util.function.BooleanSupplier)`
+- `assertFalse(java.util.function.BooleanSupplier,java.lang.String)`
+- `assertNull(java.lang.Object,java.util.function.Supplier)`
+- `assertNull(java.lang.Object,java.lang.String)`
+- `assertNull(java.lang.Object)`
+- `assertNotNull(java.lang.Object)`
+- `assertNotNull(java.lang.Object,java.util.function.Supplier)`
+- `assertNotNull(java.lang.Object,java.lang.String)`
+- `assertEquals(float,float,float,java.util.function.Supplier)`
+- `assertEquals(float,float,float,java.lang.String)`
+- `assertEquals(double,double)`
+- `assertEquals(double,double,java.lang.String)`
+- `assertEquals(float,float,float)`
+- `assertEquals(float,float,java.util.function.Supplier)`
+- `assertEquals(float,float,java.lang.String)`
+- `assertEquals(double,double,double,java.util.function.Supplier)`
+- `assertEquals(java.lang.Object,java.lang.Object)`
+- `assertEquals(java.lang.Object,java.lang.Object,java.lang.String)`
+- `assertEquals(java.lang.Object,java.lang.Object,java.util.function.Supplier)`
+- `assertEquals(double,double,double,java.lang.String)`
+- `assertEquals(double,double,double)`
+- `assertEquals(double,double,java.util.function.Supplier)`
+- `assertEquals(byte,byte,java.lang.String)`
+- `assertEquals(byte,byte,java.util.function.Supplier)`
+- `assertEquals(int,int)`
+- `assertEquals(int,int,java.lang.String)`
+- `assertEquals(short,short)`
+- `assertEquals(short,short,java.lang.String)`
+- `assertEquals(short,short,java.util.function.Supplier)`
+- `assertEquals(byte,byte)`
+- `assertEquals(char,char)`
+- `assertEquals(char,char,java.lang.String)`
+- `assertEquals(char,char,java.util.function.Supplier)`
+- `assertEquals(float,float)`
+- `assertEquals(int,int,java.util.function.Supplier)`
+- `assertEquals(long,long)`
+- `assertEquals(long,long,java.lang.String)`
+- `assertEquals(long,long,java.util.function.Supplier)`
+- `assertArrayEquals(float[],float[],float,java.util.function.Supplier)`
+- `assertArrayEquals(float[],float[],float,java.lang.String)`
+- `assertArrayEquals(double[],double[])`
+- `assertArrayEquals(double[],double[],java.lang.String)`
+- `assertArrayEquals(float[],float[])`
+- `assertArrayEquals(float[],float[],java.lang.String)`
+- `assertArrayEquals(float[],float[],java.util.function.Supplier)`
+- `assertArrayEquals(float[],float[],float)`
+- `assertArrayEquals(double[],double[],double,java.util.function.Supplier)`
+- `assertArrayEquals(java.lang.Object[],java.lang.Object[])`
+- `assertArrayEquals(java.lang.Object[],java.lang.Object[],java.lang.String)`
+- `assertArrayEquals(java.lang.Object[],java.lang.Object[],java.util.function.Supplier)`
+- `assertArrayEquals(double[],double[],double,java.lang.String)`
+- `assertArrayEquals(double[],double[],double)`
+- `assertArrayEquals(double[],double[],java.util.function.Supplier)`
+- `assertArrayEquals(char[],char[],java.lang.String)`
+- `assertArrayEquals(char[],char[],java.util.function.Supplier)`
+- `assertArrayEquals(byte[],byte[])`
+- `assertArrayEquals(byte[],byte[],java.lang.String)`
+- `assertArrayEquals(byte[],byte[],java.util.function.Supplier)`
+- `assertArrayEquals(boolean[],boolean[])`
+- `assertArrayEquals(boolean[],boolean[],java.lang.String)`
+- `assertArrayEquals(boolean[],boolean[],java.util.function.Supplier)`
+- `assertArrayEquals(char[],char[])`
+- `assertArrayEquals(int[],int[],java.lang.String)`
+- `assertArrayEquals(int[],int[],java.util.function.Supplier)`
+- `assertArrayEquals(long[],long[])`
+- `assertArrayEquals(long[],long[],java.util.function.Supplier)`
+- `assertArrayEquals(long[],long[],java.lang.String)`
+- `assertArrayEquals(short[],short[])`
+- `assertArrayEquals(short[],short[],java.lang.String)`
+- `assertArrayEquals(short[],short[],java.util.function.Supplier)`
+- `assertArrayEquals(int[],int[])`
+- `assertIterableEquals(java.lang.Iterable,java.lang.Iterable)`
+- `assertIterableEquals(java.lang.Iterable,java.lang.Iterable,java.util.function.Supplier)`
+- `assertIterableEquals(java.lang.Iterable,java.lang.Iterable,java.lang.String)`
+- `assertLinesMatch(java.util.List,java.util.List)`
+- `assertNotEquals(java.lang.Object,java.lang.Object,java.util.function.Supplier)`
+- `assertNotEquals(java.lang.Object,java.lang.Object)`
+- `assertNotEquals(java.lang.Object,java.lang.Object,java.lang.String)`
+- `assertNotSame(java.lang.Object,java.lang.Object,java.util.function.Supplier)`
+- `assertNotSame(java.lang.Object,java.lang.Object,java.lang.String)`
+- `assertNotSame(java.lang.Object,java.lang.Object)`
+- `assertAll(java.lang.String,java.util.Collection) throws org.opentest4j.MultipleFailuresError`
+- `assertAll(java.util.stream.Stream) throws org.opentest4j.MultipleFailuresError`
+- `assertAll(java.lang.String,java.util.stream.Stream) throws org.opentest4j.MultipleFailuresError`
+- `assertAll(org.junit.jupiter.api.function.Executable[]) throws org.opentest4j.MultipleFailuresError`
+- `assertAll(java.lang.String,org.junit.jupiter.api.function.Executable[]) throws org.opentest4j.MultipleFailuresError`
+- `assertAll(java.util.Collection) throws org.opentest4j.MultipleFailuresError`
+- `public static java.lang.Throwable org.junit.jupiter.api.Assertions.assertThrows(java.lang.Class,org.junit.jupiter.api.function.Executable,java.util.function.Supplier)`
+- `public static java.lang.Throwable org.junit.jupiter.api.Assertions.assertThrows(java.lang.Class,org.junit.jupiter.api.function.Executable,java.lang.String)`
+- `public static java.lang.Throwable org.junit.jupiter.api.Assertions.assertThrows(java.lang.Class,org.junit.jupiter.api.function.Executable)`
+- `assertDoesNotThrow(org.junit.jupiter.api.function.ThrowingSupplier)`
+- `assertDoesNotThrow(org.junit.jupiter.api.function.ThrowingSupplier,java.lang.String)`
+- `assertDoesNotThrow(org.junit.jupiter.api.function.ThrowingSupplier,java.util.function.Supplier)`
+- `assertDoesNotThrow(org.junit.jupiter.api.function.Executable)`
+- `assertDoesNotThrow(org.junit.jupiter.api.function.Executable,java.lang.String)`
+- `assertDoesNotThrow(org.junit.jupiter.api.function.Executable,java.util.function.Supplier)`
+- `assertTimeout(java.time.Duration,org.junit.jupiter.api.function.ThrowingSupplier)`
+- `assertTimeout(java.time.Duration,org.junit.jupiter.api.function.ThrowingSupplier,java.lang.String)`
+- `assertTimeout(java.time.Duration,org.junit.jupiter.api.function.ThrowingSupplier,java.util.function.Supplier)`
+- `assertTimeout(java.time.Duration,org.junit.jupiter.api.function.Executable)`
+- `assertTimeout(java.time.Duration,org.junit.jupiter.api.function.Executable,java.lang.String)`
+- `assertTimeout(java.time.Duration,org.junit.jupiter.api.function.Executable,java.util.function.Supplier)`
+- `assertTimeoutPreemptively(java.time.Duration,org.junit.jupiter.api.function.ThrowingSupplier)`
+- `assertTimeoutPreemptively(java.time.Duration,org.junit.jupiter.api.function.ThrowingSupplier,java.lang.String)`
+- `assertTimeoutPreemptively(java.time.Duration,org.junit.jupiter.api.function.ThrowingSupplier,java.util.function.Supplier)`
+- `assertTimeoutPreemptively(java.time.Duration,org.junit.jupiter.api.function.Executable,java.util.function.Supplier)`
+- `assertTimeoutPreemptively(java.time.Duration,org.junit.jupiter.api.function.Executable,java.lang.String)`
+- `assertTimeoutPreemptively(java.time.Duration,org.junit.jupiter.api.function.Executable)`
+
+- *Note* : Other assertion libraries exist `hamcrest`, `AssertJ` ...

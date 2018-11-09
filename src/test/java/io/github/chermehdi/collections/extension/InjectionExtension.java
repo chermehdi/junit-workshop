@@ -25,7 +25,7 @@ public class InjectionExtension implements ParameterResolver {
   }
 
   /**
-   * determines wather we can inject all the parameters specified in the test method
+   * determines weather we can inject all the parameters specified in the test method
    */
   @Override
   public boolean supportsParameter(ParameterContext parameterContext,
